@@ -1,0 +1,10 @@
+.Asteroid {
+    width: 100%;
+    border: 2px solid transparent;
+    border-image: -webkit-linear-gradient(to right, #ff00cc, #333399);
+    border-image: linear-gradient(to right, #ff00cc, #333399); 
+    border-image-slice: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
