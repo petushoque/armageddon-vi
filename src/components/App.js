@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { today, tomorrowDate } from '../utils/date';
 import * as api from '../utils/api';
 import './App.css';
+import Main from './Main'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     .then((res) => {
       console.log(res)
       setIsLoading(false)
+      setError('')
       setSpaceObjects(res.near_earth_objects[`${today}`])
     })
     .catch((err) => {
@@ -32,7 +34,7 @@ function App() {
       <div className='App__loader'></div>
       <p className='App__error'>{error}</p>
       </> : 
-      <p>no</p>}
+      <Main asteroids={spaceObjects}/>}
     </div>
   );
 }
