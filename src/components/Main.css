@@ -5,4 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    /*только мобильная версия*/
+    max-width: 480px;
 }

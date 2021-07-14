@@ -6,5 +6,52 @@
     border-image-slice: 1;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+}
+
+.Asteroid__illustration {
+    height: 150px;
+    position: relative;
+}
+
+.Asteroid__illustration_statue {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/statue_of_liberty.png);
+    background-size: 50px 50px;
+}
+
+.Asteroid__title {
+    font-size: 18px;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    margin: 0;
+}
+
+.Asteroid__information {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Asteroid__information_row {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.Asteroid__information_dots {
+    content: '';
+    border-bottom: 1px dashed white;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.Asteroid__paragraph {
+    font-size: 14px;
+    margin: 0;
 }
