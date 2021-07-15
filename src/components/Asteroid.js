@@ -5,7 +5,7 @@ export default function Asteroid(props) {
     console.log(props)
 
     return (
-        <div key={props.asteroid && props.asteroid.id} className='Asteroid'>
+        <div key={props.asteroid && props.asteroid.id} className={props.asteroid.is_potentially_hazardous_asteroid ? 'Asteroid Asteroid_hazardous' : 'Asteroid'}>
             <div className='Asteroid__illustration'>
                 <div className='Asteroid__illustration_asteroid'></div>
                 <div className='Asteroid__illustration_statue'></div>

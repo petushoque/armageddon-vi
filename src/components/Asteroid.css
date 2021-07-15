@@ -9,6 +9,11 @@
     flex-direction: column;
 }
 
+.Asteroid_hazardous {
+    background-image: url(../images/danger.gif);
+    background-size: cover;
+}
+
 .Asteroid__illustration {
     height: 150px;
     position: relative;
@@ -62,6 +67,7 @@
     bottom: 70px;
     left: 20px;
     margin: 0;
+    cursor: pointer;
 }
 
 .Asteroid__information {
