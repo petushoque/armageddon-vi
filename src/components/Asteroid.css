@@ -14,6 +14,16 @@
     position: relative;
 }
 
+.Asteroid__illustration_asteroid {
+    position: absolute;
+    bottom: 50;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/asteroid.svg);
+    background-size: contain;
+}
+
 @keyframes about-statue {
     0% {opacity: 0;}
     100% {opacity: 1;}
