@@ -93,3 +93,10 @@
     font-size: 14px;
     margin: 0;
 }
+
+.Asteroid__interaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

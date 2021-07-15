@@ -1,4 +1,5 @@
-import './Asteroid.css'
+import './Asteroid.css';
+import DestroyButton from '../elements/DestroyButton';
 
 export default function Asteroid(props) {
 
@@ -29,7 +30,10 @@ export default function Asteroid(props) {
                     <p className='Asteroid__information_dots'></p>
                     <p className='Asteroid__paragraph'>{props.asteroid && props.asteroid.close_approach_data[0].miss_distance.kilometers}</p>
                 </div>
+            </div>
 
+            <div className='Asteroid__interaction'>
+                <DestroyButton />
             </div>
             
         </div>
