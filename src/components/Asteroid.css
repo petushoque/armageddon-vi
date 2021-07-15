@@ -24,6 +24,21 @@
     background-size: 50px 50px;
 }
 
+.Asteroid__illustration_statue:hover::after {
+    content: 'Hello';
+    position: absolute;
+    width: 200px;
+    padding: 15px 10px;
+    bottom: 117%;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 7px;
+    background-color: #373849;
+    text-align: center;
+    color: #fff;
+    cursor: default;
+  }
+
 .Asteroid__title {
     font-size: 18px;
     position: absolute;
