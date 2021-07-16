@@ -31,8 +31,7 @@ export default function Asteroid(props) {
             </div>
             <div className='Asteroid__interaction'>
                 <DestroyButton />
-            </div>
-            
+            </div>            
         </div>
     )
 }
