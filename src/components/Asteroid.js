@@ -18,20 +18,17 @@ export default function Asteroid(props) {
                     <p className='Asteroid__information_dots'></p>
                     <p className='Asteroid__paragraph'>{props.asteroid && props.asteroid.close_approach_data[0].close_approach_date_full}</p>
                 </div>
-
                 <div className='Asteroid__information_row'>
                     <p className='Asteroid__paragraph'>Диаметр, м</p>
                     <p className='Asteroid__information_dots'></p>
                     <p className='Asteroid__paragraph'>{props.asteroid && props.asteroid.estimated_diameter.meters.estimated_diameter_max}</p>
                 </div>
-
                 <div className='Asteroid__information_row'>
                     <p className='Asteroid__paragraph'>Расстояние, км</p>
                     <p className='Asteroid__information_dots'></p>
                     <p className='Asteroid__paragraph'>{props.asteroid && props.asteroid.close_approach_data[0].miss_distance.kilometers}</p>
                 </div>
             </div>
-
             <div className='Asteroid__interaction'>
                 <DestroyButton />
             </div>
