@@ -5,7 +5,7 @@ import Asteroid from './Asteroid';
 
 export default function Main(props) {
 
-    
+    const [toDestroyList, setToDestroyList] = useState([])
 
     return (
         <div className='Main'>
