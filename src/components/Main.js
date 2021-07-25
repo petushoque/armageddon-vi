@@ -10,6 +10,7 @@ export default function Main(props) {
     function refreshDestroyList (id) {
         //если в списке есть нужный астероид, удалить его
         //если нет - добавить
+        console.log('function work', 'you click on asteroid #', id)
     }
 
     return (
